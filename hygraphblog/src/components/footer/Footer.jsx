@@ -19,6 +19,7 @@ export const Footer = () => {
   return (
     <footer>
       <h2>{data.footers[0].author}</h2>
+      <p>All articles are written by AI</p>
     </footer>
   );
 };

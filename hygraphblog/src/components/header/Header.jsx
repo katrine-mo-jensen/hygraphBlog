@@ -17,8 +17,9 @@ export const Header = () => {
   }
 
   return (
-    <footer>
+    <header>
       <h2>{data.headers[0].headerTitle}</h2>
-    </footer>
+      {/* <img src={data.headers[0].headerImage.url} alt="" /> */}
+    </header>
   );
 };

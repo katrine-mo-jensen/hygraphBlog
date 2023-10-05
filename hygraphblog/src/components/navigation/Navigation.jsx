@@ -1,8 +1,12 @@
+import { Link } from "react-router-dom"
+
 export const Navigation = () => {
 
     return (
         <nav>
-            <h2>navigation</h2>
+            <Link to="/">HyGraph Blog</Link>
+            <Link to="/blogposts">Blog Posts</Link>
+            
         </nav>
     )
 }
