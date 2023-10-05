@@ -13,7 +13,7 @@ export const OneBlogPosts = () => {
       request(import.meta.env.VITE_PUBLIC_URL_ID, OneBlog, { id: id }),
   });
 
-  console.log(data);
+  // console.log(data);
 
   if (isLoading) {
     return <p>Loading... </p>;
@@ -28,7 +28,7 @@ export const OneBlogPosts = () => {
       <article>
         <h3>{data.blogPost.blogTitle}</h3>
         <p>{data.blogPost.blogDescription}</p>
-        {/* <img src={data.blogPost.blogImage[0].url} alt={data.blogPost.blogTitle} /> */}
+        <section dangerouslySetInnerHTML={{__html: data.blogPost.blogContent.html}} />
       </article>
       <button>
         <Link to="/blogposts">BACK</Link>
