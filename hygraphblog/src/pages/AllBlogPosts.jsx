@@ -10,6 +10,8 @@ export const AllTheContent = () => {
       request(import.meta.env.VITE_PUBLIC_URL_ID, getAllBlogPosts),
   });
 
+  console.log(data)
+
   if (isLoading) {
     return <p>Loading... </p>;
   }
@@ -17,6 +19,7 @@ export const AllTheContent = () => {
   if (error) {
     return <p>Error: {error.message}</p>;
   }
+
 
   return (
     <>

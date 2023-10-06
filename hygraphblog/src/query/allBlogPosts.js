@@ -1,11 +1,10 @@
 export const getAllBlogPosts = `
-query allBlogPosts {
-    blogPosts {
-      blogTitle
-      blogDescription
-      id
-      
-    }
+query allTheBlogs {
+  blogPosts {
+    blogTitle
+    blogDescription
+    createdAt
   }
-  
+}
+
 `;
