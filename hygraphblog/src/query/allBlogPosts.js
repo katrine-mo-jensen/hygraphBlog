@@ -4,6 +4,7 @@ query allTheBlogs {
     blogTitle
     blogDescription
     createdAt
+    id
   }
 }
 
